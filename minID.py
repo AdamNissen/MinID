@@ -400,17 +400,15 @@ class mineral_formula():
         
         
         
-def f():
+def example():
+    """
+    An example of how to add a mineral formula to the mineral formula spreadsheet
+    """
     x = 'native silver'
     y = 'Ag'
     run = mineral_formula(name = x, formula = y)
     run.append_spreadsheets()
     
-def d():
-    x = "data_sheets/build_trial.xlsx"
-    y = 'SEM - EDS'
-    run = mineral_id(path = x, analytical_tool = y, output = "build_trial")
-    run.identify()
     
 if __name__ == "__main__":
     run = mineral_id(path = "data_sheets\example_data.xlsx", analytical_tool = "SEM-EDS", output = 'Output/example.xlsx')
